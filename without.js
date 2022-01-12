@@ -39,6 +39,7 @@ const without = function (a, b) {
         shouldPush = false;
       }
     }
+    // if pusj is true. update our result placeholder with elements of the first array
     if (shouldPush === true) {
       result.push(a[i]);
     }
