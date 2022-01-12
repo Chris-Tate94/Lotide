@@ -29,3 +29,4 @@ const assertArraysEqual = function (array1, array2) {
 assertArraysEqual([1, 2, 3], [3, 2, 1]); //FAIL
 assertArraysEqual([1, 2, 3], [1, 2, 3]); //PASS
 assertArraysEqual([1, 2, 3], [1, 2, "3"]); //FAIL
+assertArraysEqual(["Hello", "World"], ["World", "Hello"]); //FAIL
