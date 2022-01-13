@@ -1,10 +1,8 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`🟢🟢🟢 Assertion Passed: [${actual}] === [${expected}]`);
+const assertArraysEqual = function (array1, array2) {
+  if (!eqArrays(array1, array2)) {
+    return console.log(`🔴🔴🔴 Assertion Failed: [${array1}] !== [${array2}]`);
   }
-  if (actual !== expected) {
-    console.log(`🔴🔴🔴 Assertion Failed: [${actual}] !== [${expected}]`);
-  }
+  return console.log(`🟢🟢🟢 Assertion Passed: [${array1}] === [${array2}]`);
 };
 
 const eqArrays = function (arr1, arr2) {
@@ -47,6 +45,8 @@ const letterPositions = function (sentence) {
   return result;
 };
 
-const phrase = "Please count the characters in this phrase";
+// const phrase = "Please count the characters in this phrase";
 
-console.log(letterPositions(phrase));
+//console.log(letterPositions(phrase));
+assertArraysEqual(letterPositions("hello").e, [1]);
+assertArraysEqual(letterPositions("hello").l, [2, 3]);
