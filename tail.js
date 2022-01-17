@@ -1,12 +1,3 @@
-// const assertEqual = function (actual, expected) {
-//   if (actual === expected) {
-//     console.log(`🟢🟢🟢 Assertion Passed: [${actual}] === [${expected}]`);
-//   }
-//   if (actual !== expected) {
-//     console.log(`🔴🔴🔴 Assertion Failed: [${actual}] !== [${expected}]`);
-//   }
-// };
-
 const assertEqual = require("./assertEqual");
 
 //Tail function to return all elements of an array excluding the first
