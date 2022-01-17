@@ -1,5 +1,3 @@
-const assertArraysEqual = require("./assertArraysEqual");
-
 const middle = function (array) {
   //return an empty array if array is empty or has less than 2 elements
   let result = [];
